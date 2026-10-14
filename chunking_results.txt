@@ -1,0 +1,404 @@
+DYNAMIC RAG - CHUNKING STRATEGY COMPARISON
+PDF: Python-Interview-Questions.pdf
+Embedding model: all-MiniLM-L6-v2
+Questions evaluated: 10
+
+
+QUESTION: What is Python?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.2926
+very simple and easy to learn. It powerful, fast and secure. It has very simple syntax. It is powerful scripting language. It can be run on different kind of platform like Windows , Mac, Linux, etc., 2. Why we use Python? Answer: Web Application Software Development Database GUI application Scientific and Numeric Computing Business Applications Console Based Application 3.What are the applications developed using Python? Answer: Independent Platform Object oriented Flexible Structure o
+
+Result 2 | Distance: 0.3658
+55 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However, python can be treated as well as structural language. It is a collection of data members and member’s functions. Data members are the variable used inside class Member functions are the function used inside class It is also called user defined data type The class which is inherited by another class is called parent o
+
+Result 3 | Distance: 0.3682
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fas
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3579
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fast and secu
+
+Result 2 | Distance: 0.3947
+ors in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However
+
+Result 3 | Distance: 0.4272
+cond) o/p: [1, 2, 3, 4, 5, 6] [1, 2, 3, 4, 5, 6] 99.How a file is deleted in Python? Answer: The file can be deleted by either of these commands: os.remove(filename) os.unlink(filename) . C C++ PYTHON Longer lines of code as compared to python. Longer lines of code as compared to python. 3-5 times shorter than C/C++ programs. Longer lines of code as compared to python. Longer lines of code as compared to python. Python has no declaration. C is a compiled language. C++ is a compiled language. Pyt
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3754
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fast and secu
+
+Result 2 | Distance: 0.4345
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+
+Result 3 | Distance: 0.4357
+iable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python librarie
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is a list in Python?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.2670
+print('*',end='') print(‘\n’) 33.What is list in Python? Answer: 34. What is clear () function in list? Answer: 35.What are the built-in -type does python provides? Answer: Mutable: List Sets Dictionaries Immutable: Strings Tuples Numbers 36.How can you count duplicate elements in a given list?
+
+Result 2 | Distance: 0.3660
+collection of data of different data types. 54. What does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ wor
+
+Result 3 | Distance: 0.3747
+type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For example, as a key for dictionaries A mechanism to select a range of items from sequence types like list, tuple, strings etc., is known as slicing. It is an unordered collection of data of different data types. 54. W
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3293
+lowing pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.What is list in Python? Answer: 34. What is clear () function in list? Answer: 35.What are the built-in -type does python provides? Answer: Mutable: List Sets Dictionaries Immutable: Strings Tuples Numbers 36.How can you count duplicate elements in a given list? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 7 It is used to
+
+Result 2 | Distance: 0.3606
+hat does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate e
+
+Result 3 | Distance: 0.4073
+r: 27.What is import method? Answer: 28.What is Input? Answer: 29.What is “if statement”? Answer: 30.What is meant by for loop? Answer: 31.How to print the star (*) pattern without newline and space? Answer: for i in range(0, 20): print('*', end="") SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 6 It is a collection of data of different data type. It is used to store list of values. A list is created by comma separated values between square brackets. This functi
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3420
+6 It is a collection of data of different data type. It is used to store list of values. A list is created by comma separated values between square brackets. This function is used to empty the list. Count duplicate elements in a given list list1 = [2, 3, 4, 3, 10, 3, 5, 6, 3] e = list1.count(3) print('The count of element: 3 is ', e) 32.How will you create the following pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.W
+
+Result 2 | Distance: 0.3731
+i',20,'trichy') tuple*=2 print(tuple) o/p: (123, 'mani', 20, 'trichy', 123, 'mani', 20, 'trichy') SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 9 Arrays in python can only contain same data type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For exam
+
+Result 3 | Distance: 0.3879
+44.What is negative index in python? Answer: 45.What is meant by Pass Python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 8 This function reverses elements of the list This function deletes the element of given index.it deletes last item if we do not pass index. Insert function is used to add new items into list at particular index. It is used to transfer the control from one point to another point in the program. This function sorts the list in ascen
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is the difference between a list and a tuple?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.2861
+type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For example, as a key for dictionaries A mechanism to select a range of items from sequence types like list, tuple, strings etc., is known as slicing. It is an unordered collection of data of different data types. 54. W
+
+Result 2 | Distance: 0.3139
+etc. It is a collection of data of different data types. We cannot change the value of tuples. A tuple is created using parentheses. 46.What is reverse function in list? Answer: 47.What is pop () function in list? Answer: 48.What is insert () function in list? Answer: 49.What is meant by jump statement? Answer: 50.What is sort function in list? Answer: 51.What does len() do? Answer: Example: S="ABCD" print(len(S)) 52. What is meant by Tuple? A
+
+Result 3 | Distance: 0.3184
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize ()
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3847
+i',20,'trichy') tuple*=2 print(tuple) o/p: (123, 'mani', 20, 'trichy', 123, 'mani', 20, 'trichy') SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 9 Arrays in python can only contain same data type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For exam
+
+Result 2 | Distance: 0.3860
+hat does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate e
+
+Result 3 | Distance: 0.4364
+fer the control from one point to another point in the program. This function sorts the list in ascending order or descending order. It is used to determine the length of a string, a list, an array, etc. It is a collection of data of different data types. We cannot change the value of tuples. A tuple is created using parentheses. 46.What is reverse function in list? Answer: 47.What is pop () function in list? Answer: 48.What is insert () function in list? Answer: 49.What is meant by jump stateme
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3521
+i',20,'trichy') tuple*=2 print(tuple) o/p: (123, 'mani', 20, 'trichy', 123, 'mani', 20, 'trichy') SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 9 Arrays in python can only contain same data type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For exam
+
+Result 2 | Distance: 0.4976
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize () method capitalizes the first letter of a string.
+
+Result 3 | Distance: 0.5016
+44.What is negative index in python? Answer: 45.What is meant by Pass Python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 8 This function reverses elements of the list This function deletes the element of given index.it deletes last item if we do not pass index. Insert function is used to add new items into list at particular index. It is used to transfer the control from one point to another point in the program. This function sorts the list in ascen
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What are the advantages of Python?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.2735
+very simple and easy to learn. It powerful, fast and secure. It has very simple syntax. It is powerful scripting language. It can be run on different kind of platform like Windows , Mac, Linux, etc., 2. Why we use Python? Answer: Web Application Software Development Database GUI application Scientific and Numeric Computing Business Applications Console Based Application 3.What are the applications developed using Python? Answer: Independent Platform Object oriented Flexible Structure o
+
+Result 2 | Distance: 0.4212
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fas
+
+Result 3 | Distance: 0.4555
+e) of operands. Python operators work for built –in classes, the same operator behaves differently with different types. 78.What is Child class? Answer: 79.What is self in python? Answer: 80.Does python support multiple inheritances? Answer: 81.What are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in python? Answer: __init__ is a method or constructor in python. This method is automatically called to allocate memory when a new object is c
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3604
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fast and secu
+
+Result 2 | Distance: 0.4509
+ors in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However
+
+Result 3 | Distance: 0.4849
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3954
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fast and secu
+
+Result 2 | Distance: 0.4652
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+
+Result 3 | Distance: 0.4751
+iable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python librarie
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is a Python dictionary?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.4492
+print('*',end='') print(‘\n’) 33.What is list in Python? Answer: 34. What is clear () function in list? Answer: 35.What are the built-in -type does python provides? Answer: Mutable: List Sets Dictionaries Immutable: Strings Tuples Numbers 36.How can you count duplicate elements in a given list?
+
+Result 2 | Distance: 0.4875
+used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is
+
+Result 3 | Distance: 0.4914
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize ()
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.4676
+ors in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However
+
+Result 2 | Distance: 0.4695
+hat does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate e
+
+Result 3 | Distance: 0.4738
+lowing pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.What is list in Python? Answer: 34. What is clear () function in list? Answer: 35.What are the built-in -type does python provides? Answer: Mutable: List Sets Dictionaries Immutable: Strings Tuples Numbers 36.How can you count duplicate elements in a given list? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 7 It is used to
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.4544
+6 It is a collection of data of different data type. It is used to store list of values. A list is created by comma separated values between square brackets. This function is used to empty the list. Count duplicate elements in a given list list1 = [2, 3, 4, 3, 10, 3, 5, 6, 3] e = list1.count(3) print('The count of element: 3 is ', e) 32.How will you create the following pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.W
+
+Result 2 | Distance: 0.4798
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize () method capitalizes the first letter of a string.
+
+Result 3 | Distance: 0.4903
+tion is required in Python? Answer: Indentation is necessary for Python. It specifies a block of code. All code within loops, classes, functions, etc. And also it is specified within the indented block. It is usually done by using four space characters. If your code is not indented necessarily, it will not execute accurately and will throw errors as well. Page 2 7.What is an iterator in Python? Answer: An iterator is an object which implements the iterator protocol. It has a __next__() method wh
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is a Python function?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.3408
+function while invoking. The packing operators are used to collect multiple arguments in functions. They are known as arbitrary arguments. If a variable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters
+
+Result 2 | Distance: 0.3953
+55 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However, python can be treated as well as structural language. It is a collection of data members and member’s functions. Data members are the variable used inside class Member functions are the function used inside class It is also called user defined data type The class which is inherited by another class is called parent o
+
+Result 3 | Distance: 0.4307
+used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3712
+split function breaks the string into shorter strings using the defined separator. It returns the list of all the words present in the string. Parameters are the names listed in the function definition. Arguments are the values passed to the function while invoking. The packing operators are used to collect multiple arguments in functions. They are known as arbitrary arguments. If a variable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-l
+
+Result 2 | Distance: 0.4030
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+
+Result 3 | Distance: 0.4457
+ors in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3410
+iable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python librarie
+
+Result 2 | Distance: 0.4068
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+
+Result 3 | Distance: 0.4308
+44.What is negative index in python? Answer: 45.What is meant by Pass Python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 8 This function reverses elements of the list This function deletes the element of given index.it deletes last item if we do not pass index. Insert function is used to add new items into list at particular index. It is used to transfer the control from one point to another point in the program. This function sorts the list in ascen
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is object-oriented programming?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.4907
+55 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However, python can be treated as well as structural language. It is a collection of data members and member’s functions. Data members are the variable used inside class Member functions are the function used inside class It is also called user defined data type The class which is inherited by another class is called parent o
+
+Result 2 | Distance: 0.5228
+y called to allocate memory when a new object is created. All classes have the __init__ method. 84.What is operator overloading? Answer: 85..What is Encapsulation in python? Answer: Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of covering data and the methods that work on data within one unit. SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 14 Polymorphism means the ability to take multiple for
+
+Result 3 | Distance: 0.5504
+olymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also has a method with the same name ABC having its own parameters and variables. Python allows polymorphism. Abstraction means data hiding If we want to perform data hiding then it can be done by using (__) prefix with variables then they cannot be accessed outside that function File handling is a mechanism to store the data on the disk permanently. There are s
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.5661
+are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in python? Answer: __init__ is a method or constructor in python. This method is automatically called to allocate memory when a new object is created. All classes have the __init__ method. 84.What is operator overloading? Answer: 85..What is Encapsulation in python? Answer: Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of covering data and 
+
+Result 2 | Distance: 0.5901
+ors in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python libraries? Answer: Python libraries are a collection of python packages. Some of majorly used python libraries are; 72.What are modules in python? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 12 Os Random Datetime Sys Math Python is an object-oriented programming language .This means that any program can be solved in python by creating an object model. However
+
+Result 3 | Distance: 0.6275
+PYTHON INTERVIEW QUESTIONS Top Most Important Python Interview Questions & Answers PREPARED BY WORKING PROFESSIONAL 1000+ DOWNLOADS systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 It is powerful, general purpose, high level, object oriented programming language. It’s developed by Guido Van Rossum in 1991.. 1.What is Python? Answer: Page 1 It is very simple and easy to learn. It powerful, fast and secu
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.5706
+of getting property of one class into another class is called inheritance Operator overloading in python is a single operation based on the class (type) of operands. Python operators work for built –in classes, the same operator behaves differently with different types. 78.What is Child class? Answer: 79.What is self in python? Answer: 80.Does python support multiple inheritances? Answer: 81.What are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in py
+
+Result 2 | Distance: 0.6137
+iable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python librarie
+
+Result 3 | Distance: 0.6520
+times shorter than C/C++ programs. Longer lines of code as compared to python. Longer lines of code as compared to python. Python has no declaration. C is a compiled language. C++ is a compiled language. Python is an interpreted language. C supports procedural programming. C++ supports both procedural and object oriented programming. Python supports procedural, object- oriented, and functional programming. C supports procedural programming. C++ support both single and multiple inheritance Python
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is inheritance in Python?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.2295
+a class .it helps to differentiate between the methods and attributes of a class with local variables. Multiple inheritances mean that a class can be derived from more than one parent classes. Python does support multiple inheritances. Private variable Public variable Protected variable The process of getting property of one class into another class is called inheritance Operator overloading in python is a single operation based on the class (type) of operands. Python operators work for built –i
+
+Result 2 | Distance: 0.2435
+e) of operands. Python operators work for built –in classes, the same operator behaves differently with different types. 78.What is Child class? Answer: 79.What is self in python? Answer: 80.Does python support multiple inheritances? Answer: 81.What are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in python? Answer: __init__ is a method or constructor in python. This method is automatically called to allocate memory when a new object is c
+
+Result 3 | Distance: 0.4221
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statemen
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.2510
+perty of another class is called child or sub or derived class. Self is an instance or an object of a class .it helps to differentiate between the methods and attributes of a class with local variables. Multiple inheritances mean that a class can be derived from more than one parent classes. Python does support multiple inheritances. Private variable Public variable Protected variable The process of getting property of one class into another class is called inheritance Operator overloading in py
+
+Result 2 | Distance: 0.3023
+are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in python? Answer: __init__ is a method or constructor in python. This method is automatically called to allocate memory when a new object is created. All classes have the __init__ method. 84.What is operator overloading? Answer: 85..What is Encapsulation in python? Answer: Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of covering data and 
+
+Result 3 | Distance: 0.3043
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.2446
+of getting property of one class into another class is called inheritance Operator overloading in python is a single operation based on the class (type) of operands. Python operators work for built –in classes, the same operator behaves differently with different types. 78.What is Child class? Answer: 79.What is self in python? Answer: 80.Does python support multiple inheritances? Answer: 81.What are the class variables in python? Answer: 82.What is inheritance? Answer: 83.What is __init__ in py
+
+Result 2 | Distance: 0.2841
+h is inherited by another class is called parent or base class. 73.What are some of the most commonly used built-in modules in Python? Answer: Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are: 74.What is a lambda function? Answer: A lambda is an anonymous function. This function can have any number of parameters but, can have just one statement. Example: X=lambda a,b:a8b Print
+
+Result 3 | Distance: 0.4495
+iable is assigned anywhere within the function’s body its assumed to be local. NumPy Pandas Matplotlib scikit-learn, PyTorch and many more. A module is a collection of statement in which we store functions, classes and variables. 66.What is function overriding? Answer: 67.What is the split function used for? Answer: 68.What is meant by Parameters and Arguments? Answer: 69.What are packing operators in Python? How to use them? Answer: 70.What is Local variable? Answer: 71.What are python librarie
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is exception handling in Python?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.4557
+Defined Data type: 94.What is try block? Answer: 95.What is except block? Answer: 96.What is finally block? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page16 97. Explain important Python errors? Answer: The important Python errors are 1) Arithmetic Error, 2) Import Error, and 3) Index Error. Arithmetic Error: Arithmetic Error acts as a, base class for all arithmetic exceptions. It is raised for errors in arithmetic operatio
+
+Result 2 | Distance: 0.4861
+name in place of age, causing exception because age is data type int and name will be string. Class keyword is used to create class It is the place where actual code is written and exception occurs. Except block is intended to catch the error and handle the exception condition. We can have multiline except blocks to handle different types of exception and perform different actions when the exceptions occur. This block executes either exception occurs or does not occurs. 92.Give example of sl
+
+Result 3 | Distance: 0.5495
+find out if they have the same value or not Import is a keyword, to access the script from another python file or module. Input () is a predefined function which is used to take user input in python. Default user input is of type string If the condition is true its body will execute otherwise does not execute For loop is used for sequential traversal.it can be used to traverse string or array. For loop is used to iterate over a sequence list, string, tuple, etc., Iterating over a sequence is c
+Automatic keyword-overlap score: 0
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3789
+losing of file. 90.What is read () function in file handling? Answer: 91.How do you open a file for writing? Answer: _file=open('filename.txt','w') This opens the file in writing mode. You should close it once you’re done. file.close() SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page15 Suppose that we are entering our name in place of age, causing exception because age is data type int and name will be string. Class keyword is used to create class It is the place 
+
+Result 2 | Distance: 0.4078
+eptions occur. This block executes either exception occurs or does not occurs. 92.Give example of sleep() function in Python Answer: Example of sleep() function in Python Import time print("Welcome to SYSTECH GROUP") time.sleep(5) print("This message will be printed after a wait of 5 seconds") 93.What are Reasons of Exception? Answer: Mismatched input: Defined Data type: 94.What is try block? Answer: 95.What is except block? Answer: 96.What is finally block? Answer: SYSTECH systechgroup www.syst
+
+Result 3 | Distance: 0.4945
+1) Arithmetic Error, 2) Import Error, and 3) Index Error. Arithmetic Error: Arithmetic Error acts as a, base class for all arithmetic exceptions. It is raised for errors in arithmetic operations. Import Error: Import Error is raised when you are trying to import a module which does not present. This kind of exception occurs if you have made a typing mistake in the module name or the module which is not present in the standard path. Index Error: An Index Error is raised when you try to refer a se
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.3985
+name in place of age, causing exception because age is data type int and name will be string. Class keyword is used to create class It is the place where actual code is written and exception occurs. Except block is intended to catch the error and handle the exception condition. We can have multiline except blocks to handle different types of exception and perform different actions when the exceptions occur. This block executes either exception occurs or does not occurs. 92.Give example of sleep(
+
+Result 2 | Distance: 0.4810
+1) Arithmetic Error, 2) Import Error, and 3) Index Error. Arithmetic Error: Arithmetic Error acts as a, base class for all arithmetic exceptions. It is raised for errors in arithmetic operations. Import Error: Import Error is raised when you are trying to import a module which does not present. This kind of exception occurs if you have made a typing mistake in the module name or the module which is not present in the standard path. Index Error: An Index Error is raised when you try to refer a se
+
+Result 3 | Distance: 0.5126
+) o/p: sYSTecH 64.How does break, continue and pass works in python? Answer: 65.What is function in python? Answer: Break Allows loop termination when some condition is met and the control istransferred to the next statement. Continue Allows skipping some part of a loop when some specific condition ismet and the control is transferred to the beginning of the loop Pass Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation. Noth
+Automatic keyword-overlap score: 1
+
+
+QUESTION: What is the difference between a list and a set?
+
+SMALL STRATEGY
+
+Result 1 | Distance: 0.4065
+collection of data of different data types. 54. What does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ wor
+
+Result 2 | Distance: 0.4441
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize ()
+
+Result 3 | Distance: 0.4903
+type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For example, as a key for dictionaries A mechanism to select a range of items from sequence types like list, tuple, strings etc., is known as slicing. It is an unordered collection of data of different data types. 54. W
+Automatic keyword-overlap score: 1
+
+MEDIUM STRATEGY
+
+Result 1 | Distance: 0.3847
+hat does the following code give us? Answer: b=(1) print(type(b)) b=(1,) print(type(b)) 55.What is difference between python Arrays and Lists? Answer: Arrays: Lists: 56.What will the following code output? Answer: word=’abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate e
+
+Result 2 | Distance: 0.5834
+lowing pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.What is list in Python? Answer: 34. What is clear () function in list? Answer: 35.What are the built-in -type does python provides? Answer: Mutable: List Sets Dictionaries Immutable: Strings Tuples Numbers 36.How can you count duplicate elements in a given list? Answer: SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 7 It is used to
+
+Result 3 | Distance: 0.5939
+i',20,'trichy') tuple*=2 print(tuple) o/p: (123, 'mani', 20, 'trichy', 123, 'mani', 20, 'trichy') SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 9 Arrays in python can only contain same data type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For exam
+Automatic keyword-overlap score: 1
+
+LARGE STRATEGY
+
+Result 1 | Distance: 0.5098
+i',20,'trichy') tuple*=2 print(tuple) o/p: (123, 'mani', 20, 'trichy', 123, 'mani', 20, 'trichy') SYSTECH systechgroup www.systechgroup.in contact@systechgroup.in 7502202555 Page 9 Arrays in python can only contain same data type of elements. Homogeneous Consumes far less memory that lists List in python can contain elements of different data types. Heterogeneous Consuming large memory The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed, For exam
+
+Result 2 | Distance: 0.5463
+6 It is a collection of data of different data type. It is used to store list of values. A list is created by comma separated values between square brackets. This function is used to empty the list. Count duplicate elements in a given list list1 = [2, 3, 4, 3, 10, 3, 5, 6, 3] e = list1.count(3) print('The count of element: 3 is ', e) 32.How will you create the following pattern using Python? Answer: * ** *** **** o/p: for i in range(1,6): for j in range(1,i+1): print('*',end='') print(‘\n’) 33.W
+
+Result 3 | Distance: 0.5924
+abcdefghij’ word[:3]+word[3:] The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’. 57.What is the difference between List and Tuple? Answer: 58.Describe about Slicing? Answer: 59.What are sets in python? Answer: Set does not contain duplicate elements. A set is created using curly brackets SYSTECH String is a collection of characters.it is created by using single quotes or double quotes. In Python, capitalize () method capitalizes the first letter of a string.
+Automatic keyword-overlap score: 1
+
+
+CHUNKING STRATEGY EVALUATION SUMMARY
+SMALL: chunk_size=500, overlap=50, chunks=48, Keyword Hit@3=90.0%, average_top1_distance=0.3491
+MEDIUM: chunk_size=1000, overlap=200, chunks=27, Keyword Hit@3=100.0%, average_top1_distance=0.3852
+LARGE: chunk_size=1500, overlap=300, chunks=18, Keyword Hit@3=100.0%, average_top1_distance=0.3984
+
+Keyword Hit@3 is the percentage of questions for which at least one of the top three retrieved chunks contains enough question keywords according to the simple threshold.
+This is an approximate keyword baseline, not a reliable measure of whether a chunk actually answers the question.
+Lower average top-1 cosine distance indicates greater embedding similarity, but does not guarantee answer correctness.
