@@ -1,82 +1,101 @@
 
-import json
-import urllib.request
-import urllib.error
+from pathlib import Path
 
-from sentence_transformers import SentenceTransformer
 import chromadb
+from sentence_transformers import SentenceTransformer
+
+from ollama_client import generate_answer, OllamaClientError
 
 
-# STEP 1: Load the embedding model
+# ----------------------------------------
+# 1. CONFIGURATION
+# ----------------------------------------
+
+BASE_DIR = Path(__file__).resolve().parent
+DATABASE_PATH = str(BASE_DIR / "chroma_db")
+COLLECTION_NAME = "python_pdf_medium"
+
+
+# ----------------------------------------
+# 2. LOAD MODEL AND DATABASE
+# ----------------------------------------
+
 print("Loading embedding model...")
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# STEP 2: Connect to ChromaDB
-print("Connecting to ChromaDB...")
-client = chromadb.PersistentClient(path="chroma_db")
-
-collection = client.get_collection(
-    name="python_interview_questions"
+client = chromadb.PersistentClient(
+    path=DATABASE_PATH
 )
 
-print("Database connected!")
-print("Stored chunks:", collection.count())
+
+# ----------------------------------------
+# 3. CHECK COLLECTION
+# ----------------------------------------
+
+collection_names = [
+    item.name for item in client.list_collections()
+]
+
+if COLLECTION_NAME not in collection_names:
+    print("PDF collection not found.")
+    print("Run compare_chunking.py first.")
+    raise SystemExit(1)
+
+collection = client.get_collection(
+    name=COLLECTION_NAME
+)
+
+if collection.count() == 0:
+    print("PDF collection is empty.")
+    print("Run compare_chunking.py again.")
+    raise SystemExit(1)
 
 
-# STEP 3: Ask a question
-while True:
-    question = input(
-        "\nAsk a question about your PDF (type 'exit' to stop): "
-    ).strip()
+# ----------------------------------------
+# 4. RETRIEVE CONTEXT
+# ----------------------------------------
 
-    if question.lower() in ["exit", "quit"]:
-        print("Thank you for using Dynamic RAG!")
-        break
+def retrieve_context(question, top_k=3):
+    question_embedding = model.encode(
+        question,
+        normalize_embeddings=True
+    ).tolist()
 
-    if not question:
-        print("Please enter a question.")
-        continue
+    total_chunks = collection.count()
 
-    try:
-        # STEP 4: Convert question into an embedding
-        question_embedding = embedding_model.encode(
-            question
-        ).tolist()
+    results = collection.query(
+        query_embeddings=[question_embedding],
+        n_results=min(top_k, total_chunks)
+    )
 
-        # STEP 5: Retrieve relevant document chunks
-        results = collection.query(
-            query_embeddings=[question_embedding],
-            n_results=3
-        )
+    documents = results["documents"][0] or []
 
-        documents = results["documents"][0]
+    return "\n\n".join(documents)
 
-        if not documents:
-            print("No relevant information was found.")
-            continue
 
-        context = "\n\n".join(documents)
+# ----------------------------------------
+# 5. GENERATE ANSWER
+# ----------------------------------------
 
-        print("\nGenerating an answer from your PDF...")
+def generate_rag_answer(question):
+    context = retrieve_context(question)
 
-        # STEP 6: Prepare the prompt for the local AI
-        prompt = f"""
-You are a helpful assistant for answering questions
-about a Python interview questions document.
+    if not context.strip():
+        return "I could not find the answer in the PDF."
 
-Answer the user's question using ONLY the context below.
+    prompt = f"""
+You are a PDF question-answering assistant.
 
 Rules:
-1. Give a clear, simple answer.
-2. Use the context as your source.
-3. Do not invent facts that are not in the context.
-4. If the context does not contain the answer, say:
-   "I could not find enough information about this
-   question in the provided PDF."
-5. Include a short example when the context supports it.
+1. Answer only the user's exact question.
+2. Use only information explicitly available in the PDF context.
+3. Do not use general knowledge or invent information.
+4. If the answer is unavailable in the context, reply exactly:
+   I could not find the answer in the PDF.
+5. Keep the answer clear and concise.
 
-DOCUMENT CONTEXT:
+PDF CONTEXT:
 {context}
 
 USER QUESTION:
@@ -85,34 +104,31 @@ USER QUESTION:
 ANSWER:
 """
 
-        # STEP 7: Send context and question to Ollama
-        payload = {
-            "model": "llama3.2:3b",
-            "prompt": prompt,
-            "stream": False
-        }
+    return generate_answer(prompt)
 
-        request = urllib.request.Request(
-            "http://localhost:11434/api/generate",
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
 
-        with urllib.request.urlopen(
-            request, timeout=180
-        ) as response:
-            data = json.loads(response.read().decode("utf-8"))
+# ----------------------------------------
+# 6. CHAT LOOP
+# ----------------------------------------
 
-        # STEP 8: Display the generated answer
-        print("\n========== RAG ANSWER ==========")
-        print(data["response"].strip())
-        print("================================")
+print("\nDynamic RAG Chatbot")
+print("Ask questions about your PDF.")
+print("Type 'exit' to stop.\n")
 
-    except urllib.error.URLError as error:
-        print("\nCould not connect to Ollama.")
-        print("Check that Ollama is running.")
-        print("Details:", error)
+while True:
+    question = input("You: ").strip()
 
-    except Exception as error:
-        print("\nAn error occurred:", error)
+    if question.lower() in {"exit", "quit"}:
+        print("Chatbot: Goodbye!")
+        break
+
+    if not question:
+        print("Please enter a question.")
+        continue
+
+    try:
+        answer = generate_rag_answer(question)
+        print(f"\nChatbot: {answer}\n")
+
+    except OllamaClientError as error:
+        print(f"\nCould not generate an answer: {error}\n")

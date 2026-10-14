@@ -1,77 +1,126 @@
 
+from pathlib import Path
+
 import chromadb
 from sentence_transformers import SentenceTransformer
-import json
-import urllib.request
-import urllib.error
 
-# 1. Load the embedding model
+from ollama_client import generate_answer, OllamaClientError
+
+
+# ----------------------------------------
+# 1. CONFIGURATION
+# ----------------------------------------
+
+BASE_DIR = Path(__file__).resolve().parent
+DATABASE_PATH = str(BASE_DIR / "chroma_db")
+COLLECTION_NAME = "python_pdf_medium"
+
+
+# ----------------------------------------
+# 2. LOAD MODELS AND DATABASE
+# ----------------------------------------
+
 print("Loading embedding model...")
+
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# 2. Connect to your existing ChromaDB
-client = chromadb.PersistentClient(path="chroma_db")
+client = chromadb.PersistentClient(
+    path=DATABASE_PATH
+)
 
-collection = client.get_collection(name="python_pdf_medium")
 
-# 3. Ask a question
-question = input("\nAsk a question about your PDF: ")
+# ----------------------------------------
+# 3. CHECK COLLECTION
+# ----------------------------------------
 
-# 4. Convert the question into an embedding
+collection_names = [
+    item.name for item in client.list_collections()
+]
+
+if COLLECTION_NAME not in collection_names:
+    print("PDF collection not found.")
+    print("Run compare_chunking.py first.")
+    raise SystemExit(1)
+
+collection = client.get_collection(
+    name=COLLECTION_NAME
+)
+
+if collection.count() == 0:
+    print("PDF collection is empty.")
+    print("Run compare_chunking.py again.")
+    raise SystemExit(1)
+
+
+# ----------------------------------------
+# 4. ASK A QUESTION
+# ----------------------------------------
+
+question = input("\nAsk a question about your PDF: ").strip()
+
+if not question:
+    print("Question cannot be empty.")
+    raise SystemExit(1)
+
+
+# ----------------------------------------
+# 5. RETRIEVE RELEVANT CHUNKS
+# ----------------------------------------
+
 question_embedding = model.encode(
     question,
     normalize_embeddings=True
 ).tolist()
 
-# 5. Retrieve the three most relevant chunks
 results = collection.query(
     query_embeddings=[question_embedding],
-    n_results=3
+    n_results=min(3, collection.count())
 )
 
-documents = results["documents"][0]
+documents = results["documents"][0] or []
+
+if not documents:
+    print("No relevant chunks were found in the PDF.")
+    raise SystemExit(1)
+
 context = "\n\n".join(documents)
 
-# 6. Prepare the prompt for the local AI model
+
+# ----------------------------------------
+# 6. BUILD THE PROMPT
+# ----------------------------------------
+
 prompt = f"""
-Answer the question using only the context below.
+You are a PDF question-answering assistant.
 
-If the answer is not available in the context,
-say "I could not find the answer in the PDF."
+Rules:
+1. Answer only the user's exact question.
+2. Use only information explicitly available in the PDF context.
+3. Do not use general knowledge or invent information.
+4. If the answer is unavailable in the context, reply exactly:
+   I could not find the answer in the PDF.
+5. Keep the answer clear and concise.
 
-Context:
+PDF CONTEXT:
 {context}
 
-Question: {question}
+USER QUESTION:
+{question}
 
-Answer:
+ANSWER:
 """
 
-# 7. Send the prompt to Ollama
-payload = json.dumps({
-    "model": "llama3.2:3b",
-    "prompt": prompt,
-    "stream": False
-}).encode("utf-8")
 
-request = urllib.request.Request(
-    "http://localhost:11434/api/generate",
-    data=payload,
-    headers={"Content-Type": "application/json"},
-    method="POST"
-)
+# ----------------------------------------
+# 7. GENERATE THE ANSWER
+# ----------------------------------------
 
 try:
-    with urllib.request.urlopen(request, timeout=180) as response:
-        data = json.loads(response.read().decode("utf-8"))
+    answer = generate_answer(prompt)
 
     print("\nRAG Answer:")
-    print(data["response"])
+    print(answer)
 
-except urllib.error.URLError as error:
-    print("\nCould not connect to Ollama.")
-    print("Make sure the Ollama application is running.")
-    print("Details:", error)
-
-except TimeoutError:
-    print("\nThe request took too long. Try again.")
+except OllamaClientError as error:
+    print("\nCould not generate an answer.")
+    print(error)
