@@ -662,11 +662,13 @@ Answer:
 76.What is class in Python?
 Answer:
 
-    Result 3 (distance=0.408847451210022):
+    Result 3 (distance=0.40691983699798584):
 65.What is function in python?
 Answer:
-Break Allows loop termination when some condition is met and the control istransferred to the next statement.
-Continue Allows skipping some part of a loop when some specific condition ismet and the control is transferred to the beginning of the loop
+Break Allows loop termination when some condition is met and the control is
+transferred to the next statement.
+Continue Allows skipping some part of a loop when some specific condition is
+met and the control is transferred to the beginning of the loop
 Pass
 Used when you need some block of code syntactically, but you want
 to skip its execution.
@@ -922,11 +924,13 @@ Answer:
  Python libraries are a collection of python packages. 
  Some of majorly used python libraries are;
 
-    Result 3 (distance=0.638590395450592):
+    Result 3 (distance=0.6420465707778931):
 65.What is function in python?
 Answer:
-Break Allows loop termination when some condition is met and the control istransferred to the next statement.
-Continue Allows skipping some part of a loop when some specific condition ismet and the control is transferred to the beginning of the loop
+Break Allows loop termination when some condition is met and the control is
+transferred to the next statement.
+Continue Allows skipping some part of a loop when some specific condition is
+met and the control is transferred to the beginning of the loop
 Pass
 Used when you need some block of code syntactically, but you want
 to skip its execution.
